@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
 import Avatar from "../Avatar";
@@ -9,9 +9,9 @@ import MenuItem from "./MenuItem";
 const UserMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleOpen = useCallback(() => {
+  const toggleOpen = () => {
     setIsOpen((val) => !val);
-  }, []);
+  };
 
   return (
     <div className="relative">
