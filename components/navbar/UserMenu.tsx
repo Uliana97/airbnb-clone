@@ -10,9 +10,10 @@ import useLoginModal from "@/app/hooks/useLoginModal";
 
 import Avatar from "../Avatar";
 import MenuItem from "./MenuItem";
+import { SafeUser } from "@/app/types";
 
 interface UserMenuProps {
-  currentUser?: User | null;
+  currentUser?: SafeUser | null;
 }
 
 const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
